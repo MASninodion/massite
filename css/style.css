@@ -43,8 +43,8 @@ height:100%; /* IE6 treats height as min-height */
 #logo {
 	background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
     height: 59px;
-    margin: 10px 10px 10px;
-    position: absolute;
+    margin: 0px 10px 10px;
+    float: left;
     width: 184px;
 }
 
@@ -66,6 +66,7 @@ ul#menu {
     padding: 8px 0 0;
     text-align: right;
     width: 750px;
+	float: right;
 }
 
 ul#menu li.border {
@@ -95,12 +96,23 @@ ul#menu li a.current, ul#menu li a:hover {
 /***** dynamic_header *****/
 		
 #slideshow {
-	width: 874px;
-	height: 240px;
-	border: solid 1px #3e62ad;
+	position: absolute;
+	left: 18px;
+	top: 82px;
+	width: 640px;
+	height: 245px;
+	border: solid 1px #FF0000;
 	margin: 0px auto;
 }
-
+#slideshowreclame {
+	position: absolute;
+	left: 656px;
+	top: 82px;
+	width: 304px;
+	height: 245px;
+	border: solid 1px #FF0000;
+	margin: 0px auto;
+	}
 /***** Main content *****/
 
 #content {
@@ -109,13 +121,45 @@ ul#menu li a.current, ul#menu li a:hover {
     width: 950px;
 }
 
+#streep1 {
+	clear: left;
+	left: 0px;
+	top: 345px;
+	position: absolute;
+	background: url("../images/text_line.png") no-repeat scroll 0 0 transparent;
+    height: 90px;
+    margin: 0px 10px 10px;
+    width: 393px;
+	}
+	
+#streep2 {
+	position: absolute;
+	left: 383px;
+	top: 345px;
+	background: url("../images/text_line.png") no-repeat scroll 0 0 transparent;
+    height: 90px;
+    margin: 0px 10px 10px;
+    width: 393px;
+	}
+
+#streep_bodem {
+	clear: left;
+	left: 0px;
+	top: 655px;
+	position: absolute;
+	background: url("../images/bottom_line.png") no-repeat scroll 0 0 transparent;
+    height: 60px;
+    margin: 0px 10px 10px;
+    width: 960px;
+	}
+	
 #text {
-     position: absolute;
+    position: absolute;
 	width: 376px;
 	height: 244px;
 	overflow: hidden;
 	left: 18px;
-	top: 395px:
+	top: 395px;
 }
 
 #text8 {
@@ -124,7 +168,7 @@ ul#menu li a.current, ul#menu li a:hover {
 	height: 244px;
 	overflow: hidden;
 	left: 410px;
-	top: 395px:
+	top: 395px;
 
 	
 }
@@ -153,6 +197,19 @@ ul#menu li a.current, ul#menu li a:hover {
 	color: #3e62ad;
 }
 
+#footer {
+    position: absolute;
+	width: 942px;
+	height: 33px;
+	overflow: hidden;
+	left: 18px;
+	top: 675px;
+	text-align: center;
+	font-weight: 400;
+
+	
+}
+
 /***** Balk *****/
 
 #tekstbalk {
@@ -167,202 +224,4 @@ ul#menu li a.current, ul#menu li a:hover {
     font-size: 17px;
     font-weight: bold;
     padding: 15px 29px;
-}
-
-/***** Nieuws *****/ 
-
-#nieuws {
-	left: 750px;
-    margin: 20px 20px 0 0;
-    min-height: 500px;
-    position: absolute;
-    top: 645px;
-    width: 270px;
-}
-
-#nieuwsitem1 {
-    height: 150px;
-    float: left;
-    width: 250px;
-	margin: 0 0 0 24px;
-}
-
-#nieuwsitem1_picture {
-	border: solid 2px #3e62ad;
-	float: left;
-    height: 50px;
-    margin: 5px;
-    width: 50px;
-}
-
-#nieuwsitem1_tekst_h1 {
-	float: left;
-    height: 30px;
-    margin: 20px 0 0 10px;
-    width: 150px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	color: #3e62ad;
-}
-
-#nieuwsitem1_tekst {
-	float: left;
-    height: 80px;
-    margin: 2px 0 0 8px;
-    text-align: left;
-    width: 220px;
-	font-size: 12px;
-	line-height: 140%;
-}
-
-#nieuwsitem1_tekst a {
-	text-decoration: none;
-	color: #000;
-}
-
-#nieuwsitem1_tekst h2 {
-	text-decoration: none;
-	color: #3e62ad;
-	font-weight: bold;
-	font-size: 12px;
-}
-
-#nieuwsitem1_tekst a:hover {
-	text-decoration: none;
-	color: #3e62ad;
-}
-
-#nieuwsitem2 {
-    height: 150px;
-    float: left;
-    width: 250px;
-	margin: 0 0 0 26px;
-}
-
-#nieuwsitem2_picture {
-	border: solid 2px #3e62ad;
-	float: left;
-    height: 50px;
-    margin: 5px;
-    width: 50px;
-}
-
-#nieuwsitem2_tekst_h1 {
-	float: left;
-    height: 30px;
-    margin: 20px 0 0 10px;
-    width: 150px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	color: #3e62ad;
-}
-
-#nieuwsitem2_tekst {
-	float: left;
-    height: 80px;
-    margin: 2px 0 0 8px;
-    text-align: left;
-    width: 220px;
-	font-size: 12px;
-	line-height: 140%;
-}
-
-#nieuwsitem2_tekst a {
-	text-decoration: none;
-	color: #000;
-}
-
-#nieuwsitem2_tekst h2 {
-	text-decoration: none;
-	color: #3e62ad;
-	font-weight: bold;
-	font-size: 12px;
-}
-
-#nieuwsitem2_tekst a:hover {
-	text-decoration: none;
-	color: #3e62ad;
-}
-
-#nieuwsitem3 {
-    height: 150px;
-    float: left;
-    width: 250px;
-	margin: 0 0 0 26px;
-}
-
-#nieuwsitem3_picture {
-	border: solid 2px #3e62ad;
-	float: left;
-    height: 50px;
-    margin: 5px;
-    width: 50px;
-}
-
-#nieuwsitem3_tekst_h1 {
-	float: left;
-    height: 30px;
-    margin: 20px 0 0 10px;
-    width: 150px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	color: #3e62ad;
-}
-
-#nieuwsitem3_tekst {
-	float: left;
-    height: 80px;
-    margin: 2px 0 0 8px;
-    text-align: left;
-    width: 220px;
-	font-size: 12px;
-	line-height: 140%;
-}
-
-#nieuwsitem3_tekst a {
-	text-decoration: none;
-	color: #000;
-}
-
-#nieuwsitem3_tekst h2 {
-	text-decoration: none;
-	color: #3e62ad;
-	font-weight: bold;
-	font-size: 12px;
-}
-
-#nieuwsitem3_tekst a:hover {
-	text-decoration: none;
-	color: #3e62ad;
-}
-
-/***** Footer *****/
-
-#footer {
-	background: #3e62ad;
-	min-width: 100%;
-	height: 50px;
-	clear: left;
-}
-
-#footer p {
-	text-align: center;
-	font-size: 12px;
-	color: #fff;
-	padding: 10px 0;
-}
-
-#footer p a {
-	text-decoration: none;
-	color: #fff;
-	font-weight: normal;
-}
-
-#footer p a:hover {
-	text-decoration: none;
-	color: #7e7e7e;
-	font-weight: normal;
 }
