@@ -1,0 +1,368 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background: #fff;
+	line-height: 20px;
+	height: 100%;
+}
+
+#container {
+	width: 998px;
+	min-height: 100%; 
+	position: relative;
+	margin: 0px auto;
+	background: #e9e9e9;  
+}
+
+img {
+	border: none;
+}
+
+* html #container { /***** Hier heb ik ervoor gezorgd dat in Internet Explorer 6 ook de hoogte bepaald wordt door de inhoud. Internet Explorer kent geen min-height *****/
+height:100%; /* IE6 treats height as min-height */
+}
+
+/***** Header *****/
+
+#header_wrapper {
+	width: 998px;
+	height: 145px;
+	margin: 0px auto;
+}
+
+#logo {
+	background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
+    height: 59px;
+    margin: 10px 10px 10px;
+    position: absolute;
+    width: 184px;
+}
+
+/***** Menu *****/
+
+#menu_div {
+	font-size: 12px;
+    font-weight: normal;
+    height: 59px;
+    width: 750px;
+	float: right;
+	margin: 0px 0 0 0;
+	background: #fff;
+}
+
+ul#menu {
+	height: 59px;
+    list-style: none outside none;
+    padding: 8px 0 0;
+    text-align: right;
+    width: 750px;
+}
+
+ul#menu li.border {
+	margin-top: none;
+	display: inline;
+	border-left: none;
+}
+
+ul#menu li.first {
+	margin-top: none;
+	display: inline;
+	border-left: none;
+}
+
+ul#menu li a {
+    color: #808080;
+    height: 20px;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+
+ul#menu li a.current, ul#menu li a:hover {
+	color: #808080;
+	border-bottom: solid 2px #ff0000;
+}
+
+/***** dynamic_header *****/
+		
+#slideshow {
+	width: 874px;
+	height: 240px;
+	border: solid 1px #3e62ad;
+	margin: 0px auto;
+}
+
+/***** Main content *****/
+
+#content {
+    margin: 0 auto;
+    min-height: 550px;
+    width: 950px;
+}
+
+#text {
+     position: absolute;
+	width: 376px;
+	height: 244px;
+	overflow: hidden;
+	left: 18px;
+	top: 395px:
+}
+
+#text8 {
+    position: absolute;
+	width: 376px;
+	height: 244px;
+	overflow: hidden;
+	left: 410px;
+	top: 395px:
+
+	
+}
+
+#text h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+#text8 h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+#text a {
+	text-decoration: none;
+	color: #000;
+}
+
+#text a:hover {
+	text-decoration: none;
+	color: #3e62ad;
+}
+
+/***** Balk *****/
+
+#tekstbalk {
+	background: #3e62ad;
+	height: 50px;
+	width: 950px;
+}
+
+#tekstbalk h2{
+	color: #FFFFFF;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px 29px;
+}
+
+/***** Nieuws *****/ 
+
+#nieuws {
+	left: 750px;
+    margin: 20px 20px 0 0;
+    min-height: 500px;
+    position: absolute;
+    top: 645px;
+    width: 270px;
+}
+
+#nieuwsitem1 {
+    height: 150px;
+    float: left;
+    width: 250px;
+	margin: 0 0 0 24px;
+}
+
+#nieuwsitem1_picture {
+	border: solid 2px #3e62ad;
+	float: left;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+#nieuwsitem1_tekst_h1 {
+	float: left;
+    height: 30px;
+    margin: 20px 0 0 10px;
+    width: 150px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #3e62ad;
+}
+
+#nieuwsitem1_tekst {
+	float: left;
+    height: 80px;
+    margin: 2px 0 0 8px;
+    text-align: left;
+    width: 220px;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+#nieuwsitem1_tekst a {
+	text-decoration: none;
+	color: #000;
+}
+
+#nieuwsitem1_tekst h2 {
+	text-decoration: none;
+	color: #3e62ad;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#nieuwsitem1_tekst a:hover {
+	text-decoration: none;
+	color: #3e62ad;
+}
+
+#nieuwsitem2 {
+    height: 150px;
+    float: left;
+    width: 250px;
+	margin: 0 0 0 26px;
+}
+
+#nieuwsitem2_picture {
+	border: solid 2px #3e62ad;
+	float: left;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+#nieuwsitem2_tekst_h1 {
+	float: left;
+    height: 30px;
+    margin: 20px 0 0 10px;
+    width: 150px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #3e62ad;
+}
+
+#nieuwsitem2_tekst {
+	float: left;
+    height: 80px;
+    margin: 2px 0 0 8px;
+    text-align: left;
+    width: 220px;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+#nieuwsitem2_tekst a {
+	text-decoration: none;
+	color: #000;
+}
+
+#nieuwsitem2_tekst h2 {
+	text-decoration: none;
+	color: #3e62ad;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#nieuwsitem2_tekst a:hover {
+	text-decoration: none;
+	color: #3e62ad;
+}
+
+#nieuwsitem3 {
+    height: 150px;
+    float: left;
+    width: 250px;
+	margin: 0 0 0 26px;
+}
+
+#nieuwsitem3_picture {
+	border: solid 2px #3e62ad;
+	float: left;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+#nieuwsitem3_tekst_h1 {
+	float: left;
+    height: 30px;
+    margin: 20px 0 0 10px;
+    width: 150px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #3e62ad;
+}
+
+#nieuwsitem3_tekst {
+	float: left;
+    height: 80px;
+    margin: 2px 0 0 8px;
+    text-align: left;
+    width: 220px;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+#nieuwsitem3_tekst a {
+	text-decoration: none;
+	color: #000;
+}
+
+#nieuwsitem3_tekst h2 {
+	text-decoration: none;
+	color: #3e62ad;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#nieuwsitem3_tekst a:hover {
+	text-decoration: none;
+	color: #3e62ad;
+}
+
+/***** Footer *****/
+
+#footer {
+	background: #3e62ad;
+	min-width: 100%;
+	height: 50px;
+	clear: left;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	padding: 10px 0;
+}
+
+#footer p a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: normal;
+}
+
+#footer p a:hover {
+	text-decoration: none;
+	color: #7e7e7e;
+	font-weight: normal;
+}
